@@ -2,6 +2,38 @@
 <html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+   $(document).ready(function(){
+  	var $radios = $('input:radio[name=sex]');
+        $radios.filter('[value=female]').prop('checked', true);
+  	var x = Math.floor((Math.random() * 10) + 1);
+   	 $("#c1").text(x);
+   	 var y = Math.floor((Math.random() * 10) + 1);
+   	 $("#c2").text(y);
+   	 $("#sub").click(function(){
+        var z=($("#ctext").val());
+        if( z==(x+y)){
+        }
+        else{
+        	alert("Captcha error");
+        }
+        
+    }); 
+    $("#male").click(function(){
+    	$("#male").addClass("male");
+    	$("#female").removeClass("female");
+    	var $radios = $('input:radio[name=sex]');
+        $radios.filter('[value=male]').prop('checked', true);
+
+    });
+    $("#female").click(function(){
+    	$("#female").addClass("female");
+    	$("#male").removeClass("male");
+		var $radios = $('input:radio[name=sex]');
+        $radios.filter('[value=female]').prop('checked', true);    
+    });  	   	 
+   	});
+	</script>
 	<title>Registration</title>
 	
 	<style type="text/css">
@@ -52,15 +84,33 @@
 	}
 	#switch{
 		background-color: #5cb85c;
-		margin-left: 16px;
-		width:280px;
+		margin-left: 51px;
+		width:200px;
 		height:20px; 
-		padding: 10px;
-		border-radius: 5px;
+		padding: 8px;
+		border-radius: 3px;
 
 	}
 	#captcha{
 		background-color: 	white;
+	}
+	.female{
+		font-size: 14px;
+		
+		padding:6px;
+		border-radius:2px;
+		background-color:white
+
+	}
+	.male{
+		padding-left: 13px;
+		padding-right: 13px;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		
+		border-radius:2px;
+		background-color:white
+
 	}
 
 	</style>
@@ -83,11 +133,13 @@
 		<div style="background-color:#d9534f;border-radius:6px;margin-left:460px;width:330px;padding:10px;color:white;text-align:center">Welcome</div><br>
 		 <div id="inner">
 		 	<div id="switch">
-		 		<span style="margin-right:70px;padding:7px;border-radius:5px;background-color:white">Female</span>
-		 		<span style="margin-right:2px">Male</span>
+		 		<span id="female" class="female" style="font-size: 14px;margin-right:70px;">Female</span>
+		 		<span id="male"  style="font-size: 14px;margin-right:-1px;">Male</span>
 		 	</div>
 		 	<br>
 		 	<form>
+		 		<input id="rfemale" type="radio" name="sex" value="female" style="display:none">
+		 		<input id="rmale" type="radio" name="sex" value="male" style="display:none">
 		 		<input type="email"  style="width:290px;height:25px;"placeholder="Email" required><br><br>
 		 		<input type="password" style="width:290px;height:25px;" placeholder="password" required><br><br>
 		 		<input type="checkbox" style="" > <span style="font-size:11px;color:		#666666">I have read all terms and condition</span>
@@ -108,20 +160,3 @@
 
 </body>;border:solid 3px #D6EBFF
 </html>
-<script>
-   $(document).ready(function(){
-  	var x = Math.floor((Math.random() * 10) + 1);
-   	 $("#c1").text(x);
-   	 var y = Math.floor((Math.random() * 10) + 1);
-   	 $("#c2").text(y);
-   	 $("#sub").click(function(){
-        var z=($("#ctext").val());
-        if( z==(x+y)){
-        }
-        else{
-        	alert("Captcha error");
-        }
-        
-    });   	 
-   	});
-	</script>
