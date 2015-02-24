@@ -35,7 +35,7 @@ body{
 
 
 	}
-	#inner input{
+	.input{
 		background-color: #f4f4f4;
 		border-style: solid;
 		border-color: #f4f4f4;
@@ -91,4 +91,7 @@ body{
 		border-radius:2px;
 		background-color:white;
 
+	}
+	.warning{
+		border: solid 2px red;
 	}

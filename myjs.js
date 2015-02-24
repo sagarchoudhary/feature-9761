@@ -13,13 +13,42 @@ $(document).ready(function(){
    	 
    		$("#sub").click(function(){
     		var z=($("#ctext").val());
+        var a=($("#username").val());
+        var b=($("#password").val());
         	if( z==(x+y)){
         	}
         	else{
         		alert("Captcha error");
         	}
+          if( a==""||b==""){
+          alert("Please Enter valid username or password");
+          }
+          
+
         
    		}); 
+      $("#username").blur(function(){
+          var a=($("#username").val());
+          if( a==""){
+            $("#username").removeClass("input");
+              $("#username").addClass("warning");
+          }
+          else{
+              $("#username").addClass("input");
+              $("#username").removeClass("warning");          
+          } 
+      });
+      $("#password").blur(function(){
+          var a=($("#password").val());
+          if( a==""){
+            $("#password").removeClass("input");
+              $("#password").addClass("warning");
+          }
+          else{
+              $("#password").addClass("input");
+              $("#password").removeClass("warning");          
+          } 
+      });
     
     	$("#male").click(function(){
     		$("#male").addClass("male");
