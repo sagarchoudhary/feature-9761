@@ -2,150 +2,54 @@
 <html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>
-   $(document).ready(function(){
-   	if($("#checkbox").is(':checked')){
+<script>
+    $(document).ready(function(){
+   		if($("#checkbox").is(':checked')){
     		$('input[type="submit"]').removeAttr('disabled');}
 		else{
 			$('input[type="submit"]').attr('disabled','disabled');}
 
-   	var $radios = $('input:radio[name=sex]');
-        $radios.filter('[value=female]').prop('checked', true);
-  	var x = Math.floor((Math.random() * 10) + 1);
-   	 $("#c1").text(x);
-   	 var y = Math.floor((Math.random() * 10) + 1);
-   	 $("#c2").text(y);
-   	 $("#sub").click(function(){
-        var z=($("#ctext").val());
-        if( z==(x+y)){
-        }
-        else{
-        	alert("Captcha error");
-        }
+   		var $radios = $('input:radio[name=sex]');
+    	$radios.filter('[value=female]').prop('checked', true);
+  		var x = Math.floor((Math.random() * 10) + 1);
+   		$("#c1").text(x);
+   		var y = Math.floor((Math.random() * 10) + 1);
+   		$("#c2").text(y);
+   	 
+   		$("#sub").click(function(){
+    		var z=($("#ctext").val());
+        	if( z==(x+y)){
+        	}
+        	else{
+        		alert("Captcha error");
+        	}
         
-    }); 
-    $("#male").click(function(){
-    	$("#male").addClass("male");
-    	$("#female").removeClass("female");
-    	var $radios = $('input:radio[name=sex]');
-        $radios.filter('[value=male]').prop('checked', true);
+   		}); 
+    
+    	$("#male").click(function(){
+    		$("#male").addClass("male");
+    		$("#female").removeClass("female");
+    		var $radios = $('input:radio[name=sex]');
+        	$radios.filter('[value=male]').prop('checked', true);
 
+    	});
+    	$("#female").click(function(){
+    		$("#female").addClass("female");
+    		$("#male").removeClass("male");
+			var $radios = $('input:radio[name=sex]');
+        	$radios.filter('[value=female]').prop('checked', true);    
+    	});
+    	$("#checkbox").click(function(){
+    		if($("#checkbox").is(':checked')){
+    			$('input[type="submit"]').removeAttr('disabled');}
+			else{
+				$('input[type="submit"]').attr('disabled','disabled');}
+
+    	}); 	  
     });
-    $("#female").click(function(){
-    	$("#female").addClass("female");
-    	$("#male").removeClass("male");
-		var $radios = $('input:radio[name=sex]');
-        $radios.filter('[value=female]').prop('checked', true);    
-    });
-    $("#checkbox").click(function(){
-    	if($("#checkbox").is(':checked')){
-    		$('input[type="submit"]').removeAttr('disabled');}
-		else{
-			$('input[type="submit"]').attr('disabled','disabled');}
-
-    }); 	  
-      	 
-   	});
-	</script>
-	<title>Registration</title>
-	
-	<style type="text/css">
-	body{
-		background-color: black;
-		font-family: fantasy;
-		margin: 0px;
-	}
-	#header{
-
-		
-		margin-top: 28px;
-		background-color: #5CADFF;
-		height: 12px;
-		padding-top: 17px;
-		padding-bottom: 32px;
-		border-bottom-style: solid;
-		border-bottom-width: 3px;
-		border-bottom-color: #2E8AE6;
-
-	}
-	#main{
-		padding-top: 50px;
-		background-color:#24476B;
-		width: 100%;
-		height: 400px; 		
-		padding-bottom: 40px;
-	}
-	#inner{
-		margin-left: 488px;
-		margin-right: 557px;
-		text-align: center;
-		background-color: #f4f4f4;
-		border: 2px  #70B8FF;
-		padding: 13px;
-		border-radius: 2px;
-		height: 280px;
-
-
-	}
-	#inner input{
-		background-color: #f4f4f4;
-		border-style: solid;
-		border-color: #f4f4f4;
-    border-width: 1px;
-    border-bottom-style:solid;
-    border-bottom-width: 1px;
-    border-bottom-color: 	#B2B2B2;
-
-	}
-	#main a{
-		color:#2d4259;
-		font-size: 11px;
-		text-decoration: none;
-	}
-	#footer{
-		border-bottom-style: solid;
-		border-bottom-width: 3px;
-		border-bottom-color: #2E8AE6;
-	}
-	#switch{
-		
-		background-color: #5cb85c;
-		margin-left: 6px;
-		width:200px;
-		height:20px; 
-		padding: 8px;
-		border-radius: 3px;
-		color: white;
-
-	}
-	#captcha{
-		background-color: 	#f4f4f4;
-	}
-	.female{
-
-		font-size: 14px;
-		color: black;
-		padding-left: 13px;
-		padding-right: 13px;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		border-radius:2px;
-		background-color:white
-
-	}
-
-	.male{
-		padding-left: 13px;
-		padding-right: 13px;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		color: black;
-		border-radius:2px;
-		background-color:white;
-
-	}
-
-	</style>
+</script>
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="mycss.css">
 </head>
 <body>
 
@@ -190,5 +94,5 @@
 		<h4 style="color:white;text-align:center"> Copyright @2015</h4>
 	</div>
 
-</body>;border:solid 3px #D6EBFF
+</body>
 </html>

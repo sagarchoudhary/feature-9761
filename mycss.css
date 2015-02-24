@@ -1,0 +1,94 @@
+body{
+		background-color: black;
+		font-family: fantasy;
+		margin: 0px;
+	}
+	#header{
+
+		
+		margin-top: 28px;
+		background-color: #5CADFF;
+		height: 12px;
+		padding-top: 17px;
+		padding-bottom: 32px;
+		border-bottom-style: solid;
+		border-bottom-width: 3px;
+		border-bottom-color: #2E8AE6;
+
+	}
+	#main{
+		padding-top: 50px;
+		background-color:#24476B;
+		width: 100%;
+		height: 400px; 		
+		padding-bottom: 40px;
+	}
+	#inner{
+		margin-left: 488px;
+		margin-right: 557px;
+		text-align: center;
+		background-color: #f4f4f4;
+		border: 2px  #70B8FF;
+		padding: 13px;
+		border-radius: 2px;
+		height: 280px;
+
+
+	}
+	#inner input{
+		background-color: #f4f4f4;
+		border-style: solid;
+		border-color: #f4f4f4;
+    	border-width: 1px;
+    	border-bottom-style:solid;
+    	border-bottom-width: 1px;
+    	border-bottom-color: 	#B2B2B2;
+
+	}
+	#main a{
+		color:#2d4259;
+		font-size: 11px;
+		text-decoration: none;
+	}
+	#footer{
+		border-bottom-style: solid;
+		border-bottom-width: 3px;
+		border-bottom-color: #2E8AE6;
+	}
+	#switch{
+		
+		background-color: #5cb85c;
+		margin-left: 6px;
+		width:200px;
+		height:20px; 
+		padding: 8px;
+		border-radius: 3px;
+		color: white;
+
+	}
+	#captcha{
+		background-color: 	#f4f4f4;
+	}
+	.female{
+
+		font-size: 14px;
+		color: black;
+		padding-left: 13px;
+		padding-right: 13px;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		border-radius:2px;
+		background-color:white
+
+	}
+
+	.male{
+		padding-left: 13px;
+		padding-right: 13px;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		color: black;
+		border-radius:2px;
+		background-color:white;
+
+	}
