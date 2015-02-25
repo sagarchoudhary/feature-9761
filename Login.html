@@ -3,6 +3,8 @@
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/login-js.js"></script>
+<script src="js/jquery.cookie.js"></script>
+
 <link rel="stylesheet" type="text/css" href="css/login-css.css">
 <title>Log in Form</title>
 </head>
@@ -28,7 +30,7 @@
 		 		<span id="username-warning" class="username-warning-off">Username can't be empty</span><br><br> 
 		 		<input type="password" class="input" id="password"  placeholder="     password"><br><br>
 		 		<span id="password-warning" class="password-warning-off">Password can't be empty</span><br><br>
-		 		<input type="checkbox" style="padding-left:10px"><span style="font-size:11px;display:inline;">Remember me on this computer</span>&nbsp&nbsp
+		 		<input type="checkbox" name="rememberme" value="yes" id="checkbox" style="padding-left:10px"><span style="font-size:11px;display:inline;">Remember me on this computer</span>&nbsp&nbsp
 		 		<input type="submit" id="sub" style="background-color: #C2D6FF;border: thick none;border-radius: 21px;height: 33px;width: 70px;"value="Log in"><br><br>
 		 	</form>
 		 </div>

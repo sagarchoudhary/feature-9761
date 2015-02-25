@@ -1,10 +1,31 @@
 $(document).ready(function(){
-	$("#sub").click(function(){
+		
+		
+		
+		
+		
+		if($.cookie('rem')=='true'){
+		$("#username").val($.cookie('username'));
+		$("#password").val($.cookie('password'));
+	    }
+
+		$("#sub").click(function(){
         var a=($("#username").val());
         var b=($("#password").val());
         if( a==""||b==""){
         	alert("Please Enter valid username or password");
         }
+        if($("#checkbox").is(':checked')){
+    		$.cookie('username',a, { expires: 14 });
+			$.cookie('password',b, { expires: 14 });
+			$.cookie('rem','true',{ expires: 14 });
+    	}
+    	else{
+			$.cookie('username', null);
+			$.cookie('password', null);
+			$.cookie('rem', null);
+		}
+       
     }); 
     $("#username").blur(function(){
         var a=($("#username").val());
@@ -38,5 +59,8 @@ $(document).ready(function(){
             $("#password-warning").addClass("password-warning-off");          
         } 
     });
+    
+
+
 
 });
