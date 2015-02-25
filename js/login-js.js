@@ -1,15 +1,11 @@
 $(document).ready(function(){
 		
-		
-		
-		
-		
-		if($.cookie('rem')=='true'){
+	if($.cookie('rem')=='true'){
 		$("#username").val($.cookie('username'));
 		$("#password").val($.cookie('password'));
-	    }
+	}
 
-		$("#sub").click(function(){
+	$("#sub").click(function(){
         var a=($("#username").val());
         var b=($("#password").val());
         if( a==""||b==""){

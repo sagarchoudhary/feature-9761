@@ -1,8 +1,9 @@
 $(document).ready(function(){
-   		if($("#checkbox").is(':checked')){
-    		$('input[type="submit"]').removeAttr('disabled');}
-		else{
-			$('input[type="submit"]').attr('disabled','disabled');}
+   		
+      if($("#checkbox").is(':checked')){
+    	 $('input[type="submit"]').removeAttr('disabled');}
+		  else{
+			 $('input[type="submit"]').attr('disabled','disabled');}
 
    		var $radios = $('input:radio[name=sex]');
     	$radios.filter('[value=female]').prop('checked', true);

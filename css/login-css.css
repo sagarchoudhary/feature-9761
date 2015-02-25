@@ -1,23 +1,23 @@
 body{
 		background-color: grey;
 		margin: 0px;
-		font-family: fantasy;
+		font-family: arial;
 	}
 	#header{
 
 		
 		margin-top: 0px;
-		background-color: #5CADFF;
+		background-color: #0ca3d2;
 		height: 12px;
 		padding-top: 11px;
 		padding-bottom: 32px;
 		border-bottom-style: solid;
 		border-bottom-width: 5px;
-		border-bottom-color: #2E8AE6;
+		border-bottom-color: #118fb6;
 
 	}
 	#main{
-		background-color: #0CA3D2;
+		background-color: #0ca3d2;
     	height: 407px;
     	padding-bottom: 43px;
     	padding-top: 100px;
@@ -29,12 +29,14 @@ body{
 		box-shadow: 0 0 0 5px #eef3f6;
 	}
 	#inner{
+		box-shadow: 0 0 449px -26px #FFFF;
 		margin-left: 460px;
 		margin-right: 460px;
 		text-align: center;
 		background-color: white;
 		border:solid 9px  #118fb6;
 		border-radius: 3px;
+		
 
 
 	}
