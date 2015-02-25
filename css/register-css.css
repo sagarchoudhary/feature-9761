@@ -6,7 +6,7 @@ body{
 	#header{
 
 		
-		margin-top: 28px;
+		margin-top: 0px;
 		background-color: #5CADFF;
 		height: 12px;
 		padding-top: 17px;
@@ -21,7 +21,7 @@ body{
 		background-color:#24476B;
 		width: 100%;
 		height: 400px; 		
-		padding-bottom: 40px;
+		padding-bottom: 102px;
 	}
 	#inner{
 		margin-left: 488px;
@@ -51,9 +51,7 @@ body{
 		text-decoration: none;
 	}
 	#footer{
-		border-bottom-style: solid;
-		border-bottom-width: 3px;
-		border-bottom-color: #2E8AE6;
+		
 	}
 	#switch{
 		
