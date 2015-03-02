@@ -32,6 +32,7 @@ body{
 		padding: 13px;
 		border-radius: 2px;
 		height: 280px;
+		box-shadow: 0 0 1px 0 #000000;
 
 
 	}
@@ -71,25 +72,46 @@ body{
 
 		font-size: 14px;
 		color: black;
-		padding-left: 13px;
-		padding-right: 13px;
-		padding-bottom: 6px;
-		padding-top: 6px;
+		padding: 6px 24px;
+		margin-left: -50px;
 		border-radius:2px;
-		background-color:white
+		background-color:white;
+
+	}
+	.female-old{
+
+		font-size: 14px;
+		color: white;
+		padding: 6px 24px;
+		margin-left: -50px;
+		border-radius:2px;
+		background-color:#5cb85c;
 
 	}
 
 	.male{
-		padding-left: 13px;
-		padding-right: 13px;
+		margin-right: -50px;
+		padding-left: 26px;
+		padding-right: 37px;
 		padding-bottom: 6px;
 		padding-top: 6px;
 		color: black;
 		border-radius:2px;
 		background-color:white;
+		font-size: 14px;
+
 
 	}
+	.male-old{
+		margin-right: -50px;
+		padding-left: 26px;
+		padding-right: 37px;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		color: white;
+		border-radius:2px;
+		background-color:#5cb85c;
+		font-size: 14px;
 	.warning{
 		border: solid 2px red;
 	}

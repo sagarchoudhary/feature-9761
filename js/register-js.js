@@ -52,15 +52,19 @@ $(document).ready(function(){
       });
     
     	$("#male").click(function(){
-    		$("#male").addClass("male");
+    		$("#male").removeClass("male-old");
+        $("#male").addClass("male");
     		$("#female").removeClass("female");
+        $("#female").addClass("female-old");
     		var $radios = $('input:radio[name=sex]');
         	$radios.filter('[value=male]').prop('checked', true);
 
     	});
     	$("#female").click(function(){
     		$("#female").addClass("female");
+        $("#female").removeClass("female-old");
     		$("#male").removeClass("male");
+        $("#male").addClass("male-old");
 			var $radios = $('input:radio[name=sex]');
         	$radios.filter('[value=female]').prop('checked', true);    
     	});
